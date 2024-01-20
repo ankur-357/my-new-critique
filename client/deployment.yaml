@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: placetalks
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: placetalks-client
+  template:
+    metadata:
+      labels:
+        app: placetalks-client
+    spec:
+      containers:
+        - name: placetlaks-client
+          image: place-talks-client
+          ports:
+            - containerPort: 80
