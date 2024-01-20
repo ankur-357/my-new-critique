@@ -49,19 +49,7 @@ To get started with the CritiqueCraze application, follow the instructions below
     npm install
    ```
 
-4. Create a `.env` file in the server directory of the project and add the following environment variables:
-
-   ```bash
-   MONGO_URL="your-mongodb-uri"
-   JWT_SECRET="your-jwt-secret"
-
-   AWS_ACCOUNT_REGION="your-aws-region"
-   AWS_ACCOUNT_ACCESS_KEY="your-aws-access-key"
-   AWS_ACCOUNT_SECRET_ACCESS_KEY="your-aws-secret-access-key"
-   AWS_BUCKET_NAME="your-aws-bucket-name"
-   ```
-
-5. Start the development servers for the client and the server:
+4. Start the development servers for the client and the server:
 
 - Open a terminal and navigate to the client folder:
   ```bash
