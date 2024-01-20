@@ -20,7 +20,10 @@ const upload = multer({
     fileSize: 25 * 1024 * 1024, // Limit the file size to 25MB
   },
 });
-
+//SampleRoute(or)SampleEndPoint
+app.get("/", function (request, response) {
+  response.send("🙋‍♂️, 🌏 🎊✨🤩");
+});
 app.use("/api/auth", upload.single("profileImage"), authRouter);
 
 app.use("/api/places", upload.single("coverImage"), placeRoutes);
